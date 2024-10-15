@@ -78,6 +78,10 @@
     background-color: black;
 }
 
+.movies .title span {
+    padding: 0 10px;
+}
+
 .movies .title .line:first-of-type {
     width: 50px;
 }
@@ -87,7 +91,7 @@
 
 .movies .cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 50px;
 }
 
@@ -117,11 +121,6 @@
     margin-top: 100px;
 }
 
-.categories .title {
-    font-size: 3rem;
-    text-align: center;
-}
-
 .categories ul {
     position: relative;
     width: fit-content;
@@ -129,7 +128,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 .categories ul::before {
@@ -191,4 +190,51 @@
     text-align: center;
     font-size: 1.5rem;
     margin-top: 12px;
+}
+
+
+.services {
+    margin-top: 70px;
+}
+
+.services .cards {
+    display: flex;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.services .cards .card {
+    background-color: white;
+}
+
+.services .cards .card .content {
+    padding: 40px 20px;
+    font-size: 18px;
+}
+
+.services .cards .card .content p {
+    margin-bottom: 35px;
+}
+
+.services .cards .card .feature {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.services .cards .card .feature span:last-of-type{
+    width: 50%;
+}
+
+.services .cards .card .head,
+.services .cards .card .buy {
+    background-color: rgb(74, 30, 73);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+.services .cards .card .head {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }

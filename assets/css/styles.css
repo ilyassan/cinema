@@ -49,8 +49,6 @@ a {
 
 /* Global */
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-
 :root {
     --primary-color: #FF00F7;
     --secondary-color: #990094;
@@ -77,6 +75,11 @@ body {
     padding: 12px 35px;
     cursor: pointer;
     transition: all var(--transition-time);
+}
+
+.section-title {
+    font-size: 3rem;
+    text-align: center;
 }
 
 /* Navbar */
