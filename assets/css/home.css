@@ -110,3 +110,85 @@
     padding-left: 0;
     padding-right: 0;
 }
+/* End the movies section */
+
+/* The Categories Section */
+.categories {
+    margin-top: 100px;
+}
+
+.categories .title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.categories ul {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.categories ul::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 50px);
+    height: 1px;
+    background-color: var(--gray-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.categories ul li {
+    position: relative;
+    width: 69px;
+    text-align: center;
+    color: #5D5D5D;
+    cursor: pointer;
+}
+.categories ul li.active {
+    color: black;
+}
+.categories ul li.active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left: 0;
+    bottom: -10px;
+}
+
+.categories .container {
+    display: flex;
+    justify-content: center;
+}
+
+.categories .cards {
+    width: 80%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 10px;
+}
+
+.categories .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories .cards .card img {
+    width: 228px;
+    height: 228px;
+    border-radius: 35px;
+}
+.categories .cards .card p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 12px;
+}

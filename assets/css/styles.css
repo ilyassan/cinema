@@ -63,6 +63,7 @@ a {
 body {
     font-family: "Comfortaa", sans-serif;
     background-color: #F6F6F6;
+    overflow-x: hidden;
 }
 
 .container {
