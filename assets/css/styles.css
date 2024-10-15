@@ -64,9 +64,22 @@ body {
     font-family: "Comfortaa", sans-serif;
 }
 
+.container {
+    margin-left: 40px ;
+    margin-right: 40px ;
+}
+
+.btn {
+    border-radius: 20px;
+    border: none;
+    padding: 12px 35px;
+    cursor: pointer;
+    transition: all var(--transition-time);
+}
+
 /* Navbar */
 nav {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 25px;
     margin: 0 20px;
     display: flex;
