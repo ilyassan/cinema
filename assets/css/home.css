@@ -60,3 +60,53 @@
     color: black;
     background-color: transparent;
 }
+/*End Hero Section */
+
+/* The Movies Section Styles */
+
+.movies {
+    margin-top: 40px;
+}
+
+.movies .title {
+    display: flex;
+    align-items: center;
+}
+
+.movies .title .line {
+    height: 1px;
+    background-color: black;
+}
+
+.movies .title .line:first-of-type {
+    width: 50px;
+}
+.movies .title .line:last-of-type {
+    flex: 1;
+}
+
+.movies .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.movies .cards .card{
+    flex-basis: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.movies .cards .card img{
+    width: 180px;
+    height: 270px;
+    border-radius: 35px;
+}
+.movies .cards .card .btn {
+    background-color: var(--dark-color);
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 0;
+    padding-right: 0;
+}
