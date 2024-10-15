@@ -3,7 +3,7 @@
     --primary-color: #FF00F7;
     --secondary-color: #990094;
     --gray-color: #CCCCCC;
-    --dark-color: #330031;
+    --dark-color: #4B1F4A;
     --light-color: #FFCCFD;
     --transition-time: 300ms;
 }
@@ -191,10 +191,18 @@
     font-size: 1.5rem;
     margin-top: 12px;
 }
+/* End the movies section */
 
+
+/* The Services Section */
 
 .services {
     margin-top: 70px;
+}
+
+.services .container {
+    display: flex;
+    justify-content: center;
 }
 
 .services .cards {
@@ -227,7 +235,7 @@
 
 .services .cards .card .head,
 .services .cards .card .buy {
-    background-color: rgb(74, 30, 73);
+    background-color: var(--dark-color);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -238,3 +246,63 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+.services .cards .card .buy {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/* End the services section */
+
+/* The Footer Section */
+
+footer {
+    margin-top: 100px;
+    background-color: var(--dark-color);
+    padding: 100px 0 20px;
+    color: white;
+}
+footer .container {
+    display: flex;
+}
+footer .container > .line {
+    width: 2px;
+    min-height: 100%;
+    background-color: white;
+}
+footer .list {
+    padding: 0 60px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 70px;
+}
+footer .list h4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+footer .list h4::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+footer .list i {
+    font-size: 1.5rem;
+}
+footer .list > div {
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright {
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+
+/* End the footer section */
