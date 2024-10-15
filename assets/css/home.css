@@ -11,6 +11,10 @@
 
 /* Hero Section Styles */
 .hero {
+    transform: translateX(20px);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 15rem;
     padding: 80px 0;
     background: linear-gradient(135deg, #CA26FF 7%, #F4CAC0 85%, #FFF3B0 100% );
 }
