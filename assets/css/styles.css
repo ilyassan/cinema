@@ -1,0 +1,142 @@
+/* Css Reset Styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #FF00F7;
+    --secondary-color: #990094;
+    --gray-color: #CCCCCC;
+    --dark-color: #330031;
+    --light-color: #FFCCFD;
+    --transition-time: 300ms;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* Navbar */
+nav {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li a {
+    transition: color var(--transition-time);
+}
+
+nav ul li.active a,
+nav ul li:hover a {
+    color: var(--primary-color);
+}
+
+nav .search {
+    position: relative;
+    width: 180px;
+}
+
+nav .search input {
+    background-color: var(--light-color);
+    border-radius: 1rem;
+    padding: 10px 16px;
+    padding-right: 30px;
+    outline: none;
+    border: none;
+    caret-color: white;
+    width: 150px;
+    transition: width var(--transition-time);
+}
+
+nav .search input:focus {
+    width: 180px;
+}
+nav .search:has(input:focus) i {
+    right: -35px;
+}
+
+nav .search input::placeholder {
+    color: white;
+}
+
+nav .search i {
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    cursor: pointer;
+    transition: right var(--transition-time);
+}
+
+nav .profile i {
+    font-size: 22px;
+    cursor: pointer;
+    transition: color var(--transition-time);
+}
+
+nav .profile  i:hover {
+    color: var(--primary-color);
+}
