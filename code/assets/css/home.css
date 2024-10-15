@@ -293,6 +293,10 @@ footer .list h4::before {
 footer .list i {
     font-size: 1.5rem;
 }
+footer .list p,
+footer .copyright {
+    opacity: .8;
+}
 footer .list > div {
     display: flex;
     justify-content: space-between;
