@@ -21,6 +21,11 @@
 
 .hero .container {
     display: flex;
+    gap: 100px;
+}
+
+.hero .content {
+    flex-basis: 50%;
 }
 
 .hero h1 {
@@ -37,7 +42,7 @@
 }
 
 .hero p {
-    margin: 60px 0;
+    margin: 60px 0 120px;
     color: white;
     line-height: 150%;
 }
@@ -118,7 +123,7 @@
 
 /* The Categories Section */
 .categories {
-    margin-top: 100px;
+    margin-top: 140px;
 }
 
 .categories ul {
@@ -148,8 +153,10 @@
     text-align: center;
     color: #5D5D5D;
     cursor: pointer;
+    transition: color var(--transition-time);
 }
-.categories ul li.active {
+.categories ul li.active,
+.categories ul li:hover {
     color: black;
 }
 .categories ul li.active::before {
@@ -197,7 +204,7 @@
 /* The Services Section */
 
 .services {
-    margin-top: 70px;
+    margin-top: 140px;
 }
 
 .services .container {
@@ -240,6 +247,9 @@
     text-align: center;
     padding: 20px 0;
     font-size: 1.5rem;
+}
+.services .cards .card a {
+    color: white;
 }
 
 .services .cards .card .head {
