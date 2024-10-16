@@ -61,6 +61,10 @@ a {
     --transition-time: 300ms;
 }
 
+* {
+    font-family: "Comfortaa", sans-serif;
+}
+
 body {
     font-family: "Comfortaa", sans-serif;
     background-color: #F6F6F6;
