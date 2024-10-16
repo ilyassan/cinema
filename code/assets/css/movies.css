@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #FF00F7;
+    --secondary-color: #990094;
+    --gray-color: #CCCCCC;
+    --dark-color: #4B1F4A;
+    --light-color: #FFCCFD;
+    --transition-time: 300ms;
+}
+
+
+
+.hero {
+    position: relative;
+}
+.hero img {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-color);
+    opacity: .7;
+}
+.hero p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+    font-size: 3rem;
+    color: white;
+}
+.hero .bullets {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+.hero .bullet {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--gray-color);
+    cursor: pointer;
+}
+.hero .bullet.active {
+    background-color: white;
+    scale: 1.5;
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--dark-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 50px auto 0;
+}
+.seperate .arrow-down i{
+    color: var(--dark-color);
+    font-size: 3rem;
+}
+
+.seperate .line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-block: 70px;
+}
+
+.movies .filter {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.movies .filter > input {
+    outline: none;
+    border: none;
+    background-color: #eee;
+    padding: 15px 25px;
+    border-radius: 1rem;
+
+    &::placeholder {
+        color: #594040;
+    }
+}
+
+.movies .filter .select {
+    padding: 15px 25px;
+    border-radius: 1rem;
+    display: flex;
+    background: white;
+    gap: 10px;
+    border: 2px solid var(--dark-color);
+    cursor: pointer;
+}
+.movies .filter select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    appearance: none;
+    color: var(--dark-color);
+    font-weight: 600;
+    pointer-events: none;
+    user-select: none;
+}
+.movies .filter .select span {
+    rotate: 90deg;
+}
+
+.movies .cards {
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+}
+.movies .cards .card {
+    position: relative;
+}
+.movies .cards .card img {
+    width: 100%;
+    border-radius: 1rem;
+}
+.movies .cards .card .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    background-color: var(--dark-color);
+    opacity: .8;
+    border-radius: 1rem;
+    color: white;
+}
+.movies .cards .card .info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+
+    & h4 {
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+
+    & p {
+        font-size: 13px;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+
+    & .rating {
+        color: gold;
+    }
+}

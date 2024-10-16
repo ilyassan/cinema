@@ -24,6 +24,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
 	line-height: 1;
 }
@@ -158,3 +161,61 @@ nav .profile i {
 nav .profile  i:hover {
     color: var(--primary-color);
 }
+
+
+/* The Footer Section */
+
+footer {
+    margin-top: 100px;
+    background-color: var(--dark-color);
+    padding: 100px 0 20px;
+    color: white;
+}
+footer .container {
+    display: flex;
+}
+footer .container > .line {
+    width: 2px;
+    min-height: 100%;
+    background-color: white;
+}
+footer .list {
+    padding: 0 60px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 70px;
+}
+footer .list h4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+footer .list h4::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+footer .list i {
+    font-size: 1.5rem;
+}
+footer .list p,
+footer .copyright {
+    opacity: .8;
+}
+footer .list > div {
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright {
+    margin-top: 45px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* End the footer section */
