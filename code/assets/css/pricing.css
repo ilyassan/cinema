@@ -1,0 +1,75 @@
+
+:root {
+    --primary-color: #FF00F7;
+    --secondary-color: #990094;
+    --gray-color: #CCCCCC;
+    --dark-color: #4B1F4A;
+    --light-color: #FFCCFD;
+    --transition-time: 300ms;
+}
+
+
+
+.hero {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & p {
+        font-size: 3rem;
+    }
+    & p span {
+        color: var(--primary-color);
+    }
+}
+
+.arrow-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--dark-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 50px auto 0;
+}
+.seperate .arrow-down i{
+    color: var(--dark-color);
+    font-size: 3rem;
+}
+
+.seperate .line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin-block: 70px;
+}
+
+.pricing {
+    margin-top: 100px;
+}
+
+.pricing .cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+.pricing .cards .card {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+
+    & h4{
+        text-align: center;
+        font-size: 2rem;
+        padding-block: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    & .content {
+        padding: 20px;
+    }
+}
