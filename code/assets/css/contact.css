@@ -15,7 +15,7 @@ section {
 
 section form {
     margin-top: 100px;
-    padding-inline: 200px;
+    padding-inline: 150px;
 }
 
 section input,
@@ -38,6 +38,18 @@ section .name-inputs {
 
     & input {
         flex-basis: 300px;
+    }
+}
+@media (max-width: 994px) {
+    section {
+        margin-top: 60px;
+    }
+    section .name-inputs {
+        display: block;
+    }
+    section form {
+        margin-top: 50px;
+        padding-inline: 20px;
     }
 }
 
