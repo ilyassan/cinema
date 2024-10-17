@@ -25,18 +25,18 @@
 
 .hero img:nth-child(1) {
     opacity: 1;
-    animation: hide 1s 3s forwards;
+    animation: hide 1s 2s forwards;
 }
 .hero img:nth-child(2) {
-    animation: slide 15s infinite;
+    animation: slide 12s infinite;
 }
 
 .hero img:nth-child(3) {
-    animation: slide 15s 5s infinite;
+    animation: slide 12s 4s infinite;
 }
 
 .hero img:nth-child(4) {
-    animation: slide 15s 10s infinite;
+    animation: slide 12s 8s infinite;
 }
 
 .hero::before {
@@ -217,7 +217,18 @@
     }
 
     & .rating {
-        color: gold;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & div {
+            color: gold;    
+        }
+        & > i {
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+        }
     }
 }
 
