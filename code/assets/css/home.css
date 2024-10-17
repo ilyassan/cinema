@@ -105,6 +105,11 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    transition: scale var(--transition-time);
+
+    &:hover {
+        scale: 1.02;
+    }
 }
 .movies .cards .card img{
     width: 180px;
