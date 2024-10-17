@@ -16,11 +16,22 @@
     justify-content: center;
     align-items: center;
 
-    & p {
-        font-size: 3rem;
-    }
     & p span {
         color: var(--primary-color);
+    }
+}
+.hero p {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 40px;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        height: 40vh;
+    }
+    .hero p {
+        font-size: 2rem;
     }
 }
 
@@ -115,10 +126,59 @@
     }
 }
 
+@media (max-width: 767px) {
+    .pricing .cards .card,
+    .special-pricing .cards .card {
+        height: 350px;
+        width: 300px;
+
+        & h4{
+            margin-top: 15px;
+            font-size: 1.8rem;
+            padding-block: 15px;
+        }
+
+        & .content {
+            margin-top: 15px;
+            padding: 15px;
+        }
+
+        & .bottom {
+            margin-bottom: 15px;
+
+            & button {
+                width: 50%;
+                font-size: 1rem;
+            }
+        }
+    }
+}
 
 .special-pricing .cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
     margin-top: 80px;
+}
+
+@media (max-width: 994px) {
+
+    .pricing .cards {
+        grid-template-columns: repeat(2, 340px);
+    }
+}
+
+@media (max-width: 767px) {
+
+    .pricing .cards {
+        grid-template-columns: 340px;
+        place-items: center;
+    }
+
+    .pricing .cards,
+    .special-pricing .cards {
+        gap: 30px;
+        margin-top: 50px;
+    }
 }

@@ -88,6 +88,11 @@ body {
     font-size: 3rem;
     text-align: center;
 }
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2.4rem;
+    }
+}
 
 .arrow-down {
     display: flex;
@@ -147,6 +152,11 @@ nav .search {
     position: relative;
     width: 180px;
 }
+@media (max-width: 994px) {
+    nav .search {
+        display: none;
+    }
+}
 
 nav .search input {
     background-color: var(--light-color);
@@ -181,6 +191,10 @@ nav .search i {
     transition: right var(--transition-time);
 }
 
+nav .profile {
+    display: flex;
+}
+
 nav .profile i {
     font-size: 22px;
     cursor: pointer;
@@ -191,13 +205,33 @@ nav .profile  i:hover {
     color: var(--primary-color);
 }
 
+nav .menu {
+    display: none;
+    margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+    nav ul {
+        display: none;
+    }
+
+    nav .profile i {
+        font-size: 20px;
+    }
+    
+    nav .menu {
+        display: block;
+    }
+}
+
 
 /* The Footer Section */
 
 footer {
     margin-top: 100px;
     background-color: var(--dark-color);
-    padding: 100px 0 20px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     color: white;
 }
 footer .container {
@@ -246,6 +280,20 @@ footer .copyright {
     margin-top: 45px;
     text-align: center;
     line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding-block: 50px;
+    }
+    footer .container {
+        display: none;
+    }
+    footer .copyright {
+        margin: 0;
+        line-height: 45px;
+        font-size: .9rem;
+    }
 }
 
 /* End the footer section */
