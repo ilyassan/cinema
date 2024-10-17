@@ -186,7 +186,7 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px 10px;
+    gap: 10px;
 }
 
 .categories .cards .card {
@@ -196,7 +196,7 @@
 }
 
 .categories .cards .card img {
-    width: 300px;
+    width: 100%;
     height: 300px;
 }
 .categories .cards .card p {
