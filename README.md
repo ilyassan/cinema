@@ -10,6 +10,10 @@ La startup **CodeShögun** souhaite transformer les maquettes fournies en pages 
 ### Planification des tàches
 [Voir la planification](https://trello.com/invite/b/670cee7b206e6fbfcb2179b3/ATTIa0edb71dbb8deebb1d5447a7312a62f881970834/cinemas)
 
+### Maquette
+[Version 1 de maquette](https://drive.google.com/file/d/1pRue8on2irqQ8ENzpRb_6oSQeNaipGn7/view?usp=drive_link)
+[Version 2 de maquette](https://drive.google.com/file/d/13jCPkB1p5DeSPOvDliLdcyTRLbW5DNre/view?usp=drive_link)
+
 ### Accéder au site
 [Visiter le site](https://ilyassan.github.io/cinema/code)
 
