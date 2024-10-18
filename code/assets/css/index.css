@@ -151,28 +151,54 @@
     transform: translateX(-50%);
     bottom: -10px;
 }
-
-.categories ul li {
-    position: relative;
-    width: 69px;
-    text-align: center;
-    color: #5D5D5D;
-    cursor: pointer;
-    transition: color var(--transition-time);
-}
-.categories ul li.active,
-.categories ul li:hover {
-    color: black;
-}
-.categories ul li.active::before {
+.categories ul::after {
     position: absolute;
     content: "";
-    width: 100%;
-    height: 1px;
+    width: 79px;
+    height: 2px;
     background-color: black;
     left: 0;
     bottom: -10px;
+    transition: left var(--transition-time);
 }
+.categories ul:has(li:nth-child(1):focus)::after {
+    left: 0;
+}
+.categories ul:has(li:nth-child(2):focus)::after {
+    left: calc(30px + 79px);
+}
+.categories ul:has(li:nth-child(3):focus)::after {
+    left: calc((30px + 79px) * 2);
+}
+.categories ul:has(li:nth-child(4):focus)::after {
+    left: calc((30px + 79px) * 3);
+}
+.categories ul:has(li:nth-child(5):focus)::after {
+    left: calc((30px + 79px) * 4);
+}
+.categories ul:has(li:nth-child(6):focus)::after {
+    left: calc((30px + 79px) * 5);
+}
+
+.categories ul li {
+    position: relative;
+    width: 79px;
+    text-align: center;
+    color: #5D5D5D;
+    font-weight: bold;
+    transition: all var(--transition-time);
+    cursor: pointer;
+}
+
+.categories ul:has(li:focus:not(.active)) li.active:not(:hover) {
+    color: #5D5D5D;
+}
+.categories ul li.active,
+.categories ul li:hover,
+.categories ul li:focus{
+    color: black;
+}
+
 
 .categories .container {
     display: flex;
