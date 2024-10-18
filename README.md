@@ -1,8 +1,8 @@
 # CINEMA'S - Brief 2
 
-## Contexte du projet
+## Objectifs du projet
 
-La startup **CodeShögun** souhaite transformer les maquettes fournies en pages web fonctionnelles pour un cinéma. L'objectif est de créer un site attrayant qui offre une expérience utilisateur enrichissante et permet aux visiteurs d'accéder facilement aux informations sur les films et les tarifs.
+L'objectif principal est de développer un site web multi-pages pour le cinéma, incluant des informations détaillées sur les films, les tarifs et un formulaire de contact.
 
 ### Présentation du projet
 [La Présentation](https://www.canva.com/design/DAGTFHsQ4_U/p2_4n30CBK0vqAS3ksK7iA/view?utm_content=DAGTFHsQ4_U&utm_campaign=designshare&utm_medium=link&utm_source=editor)
@@ -18,9 +18,6 @@ La startup **CodeShögun** souhaite transformer les maquettes fournies en pages 
 ### Accéder au site
 [Visiter le site](https://ilyassan.github.io/cinema/code)
 
-## Objectifs du projet
-
-L'objectif principal est de développer un site web multi-pages pour le cinéma, incluant des informations détaillées sur les films, les tarifs et un formulaire de contact.
 
 ### Pages à développer :
 1. **Accueil** : Présentation générale du cinéma et de son ambiance.
