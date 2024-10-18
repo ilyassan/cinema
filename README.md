@@ -12,6 +12,7 @@ La startup **CodeShögun** souhaite transformer les maquettes fournies en pages 
 
 ### Maquette
 [Version 1 de maquette](https://drive.google.com/file/d/1pRue8on2irqQ8ENzpRb_6oSQeNaipGn7/view?usp=drive_link)
+
 [Version 2 de maquette](https://drive.google.com/file/d/13jCPkB1p5DeSPOvDliLdcyTRLbW5DNre/view?usp=drive_link)
 
 ### Accéder au site
