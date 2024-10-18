@@ -193,6 +193,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: scale var(--transition-time);
+
+    &:hover {
+        scale: 1.02;
+    }
 }
 
 .categories .cards .card img {
@@ -228,6 +233,11 @@
 
 .services .cards .card {
     background-color: white;
+    transition: scale var(--transition-time);
+
+    &:hover {
+        scale: 1.02;
+    }
 }
 
 .services .cards .card .content {
