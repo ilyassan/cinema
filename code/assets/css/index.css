@@ -208,9 +208,23 @@
 .categories .cards {
     width: 80%;
     margin-top: 50px;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px 10px;
+}
+.categories .cards.active {
+    display: grid;
+}
+.categories:has(li.active:not(:focus)) ul:has(li:focus) ~ .container .cards.active {
+    display: none;
+}
+.categories ul:has(li:nth-child(1):focus) ~ .container .cards:nth-child(1),
+.categories ul:has(li:nth-child(2):focus) ~ .container .cards:nth-child(2) ,
+.categories ul:has(li:nth-child(3):focus) ~ .container .cards:nth-child(3) ,
+.categories ul:has(li:nth-child(4):focus) ~ .container .cards:nth-child(4) ,
+.categories ul:has(li:nth-child(5):focus) ~ .container .cards:nth-child(5) ,
+.categories ul:has(li:nth-child(6):focus) ~ .container .cards:nth-child(6) {
+    display: grid;
 }
 
 .categories .cards .card {
