@@ -9,6 +9,7 @@
 }
 
 
+/* The Hero Styles */
 
 .hero {
     height: 50vh;
@@ -35,6 +36,9 @@
     }
 }
 
+/* End Hero Styles */
+
+
 .seperate .arrow-down i{
     color: var(--dark-color);
     font-size: 3rem;
@@ -46,6 +50,8 @@
     background-color: black;
     margin-block: 70px;
 }
+
+/* The Pricing Styles */
 
 .pricing,
 .special-pricing {
@@ -182,3 +188,5 @@
         margin-top: 50px;
     }
 }
+
+/* End the Pricing Styles */

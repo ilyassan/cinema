@@ -8,7 +8,7 @@
 }
 
 
-
+/* Hero Section Styles */
 .hero {
     position: relative;
 }
@@ -100,6 +100,8 @@
     background-color: white;
     scale: 1.5;
 }
+/*End Hero Section */
+
 
 .seperate .arrow-down i{
     color: var(--dark-color);
@@ -113,6 +115,7 @@
     margin-block: 70px;
 }
 
+/* The Movies Section Styles */
 .movies .filter {
     display: flex;
     margin-top: 60px;
@@ -271,8 +274,10 @@
     }
 }
 
+/* End the movies section */
 
 
+/* The animations */
 
 @keyframes slide {
     0%, 33% {
