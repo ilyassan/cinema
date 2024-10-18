@@ -15,6 +15,16 @@
 .hero .hero-image {
     height: 100vh;
 }
+@media (max-width: 994px) {
+    .hero .hero-image {
+        height: 80vh;
+    }
+}
+@media (max-width: 767px) {
+    .hero .hero-image {
+        height: 60vh;
+    }
+}
 .hero img {
     position: absolute;
     width: 100%;
@@ -54,7 +64,15 @@
     top: 40%;
     font-size: 3rem;
     color: white;
+    width: 100%;
+    text-align: center;
 }
+@media (max-width: 767px) {
+    .hero p {
+        font-size: 1.6rem;
+    }
+}
+
 .hero .bullets {
     position: absolute;
     display: flex;
@@ -71,6 +89,12 @@
     border-radius: 50%;
     background-color: var(--gray-color);
     cursor: pointer;
+}
+@media (max-width: 767px) {
+    .hero .bullet {
+        width: 10px;
+        height: 10px;
+    }
 }
 .hero .bullet.active {
     background-color: white;
@@ -107,7 +131,12 @@
         color: #594040;
     }
 }
-
+@media (max-width: 767px) {
+    .movies .filter > input {
+        width: 150px;
+        padding: 10px 15px;
+    }
+}
 .movies .filter .select {
     padding: 15px 25px;
     border-radius: 1rem;
@@ -116,6 +145,11 @@
     gap: 10px;
     border: 2px solid var(--dark-color);
     cursor: pointer;
+}
+@media (max-width: 767px) {
+    .movies .filter .select {
+        padding: 8px 15px;
+    }
 }
 .movies .filter select {
     display: flex;
@@ -138,6 +172,11 @@
     margin-top: 80px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+@media (max-width: 767px) {
+    .movies .cards {
+        grid-template-columns: 1fr;
+    }
 }
 .movies .cards .card {
     position: relative;
