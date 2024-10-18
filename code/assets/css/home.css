@@ -219,7 +219,9 @@
 }
 
 .services .cards {
+    width: 100%;
     display: flex;
+    justify-content: space-between;
     margin-top: 50px;
     gap: 25px;
 }
